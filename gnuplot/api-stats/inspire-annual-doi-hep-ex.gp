@@ -1,4 +1,4 @@
-#set datafile commentschars "!"
+set datafile commentschars "!"
 
 set terminal epslatex standalone size 16cm,10cm
 texfile = "inspire-annual-doi-hep-ex.tex"
@@ -14,10 +14,10 @@ set xlabel "Year" offset 0,-1
 set ylabel "No. of papers"
 set xtic rotate by 90 offset 0,-2
 set yrange [0 : 150]
-set xrange [4 : 26]
+set xrange [-1 : 21]
 
-set key at 5, 140 top left
-set label "hep-ex papers with DOI" at 5, 120
+set key at 0, 140 top left
+set label "hep-ex papers with DOI" at 0, 120
 
 set style fill solid 1.0 border lt -1
 set style data histograms

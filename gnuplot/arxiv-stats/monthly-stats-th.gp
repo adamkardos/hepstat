@@ -1,4 +1,4 @@
-#set datafile commentschars "!"
+set datafile commentschars "!"
 
 set terminal epslatex standalone size 16cm,10cm
 set output "monthly-stats-th.tex"
@@ -20,7 +20,7 @@ set style fill solid 1.0 border lt -1
 set style histogram clustered
 set style data histogram
 #set style histogram rowstacked
-plot "arxiv-monthly-stats-th.txt"  \
+plot "arxiv-monthly-stat-hep-th.txt"  \
   u 2:xtic(1) t "2015", \
   "" u 3 t "2016", \
   "" u 4 t "2017", \

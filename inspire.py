@@ -58,32 +58,34 @@ DefaultURLprefix = 'https://inspirehep.net/api/literature?fields=hits.total&form
 #
 fname = "inspire-annual-doi-hep-ph.dat"
 print(fname)
-StoreAnnual(fname,[2001,2021],["dois:*","document_type:article","arxiv_eprints.categories:hep-ph"])
+StoreAnnual(fname,[2001,2021],["dois.value:*","document_type:article","arxiv_eprints.categories:hep-ph"])
+
+
 #
 #  All publications with hep-th on an annual basis:
 #
 fname = "inspire-annual-doi-hep-th.dat"
 print(fname)
-StoreAnnual(fname,[2001,2021],["dois:*","document_type:article","arxiv_eprints.categories:hep-th"])
+StoreAnnual(fname,[2001,2021],["dois.value:*","document_type:article","arxiv_eprints.categories:hep-th"])
 #
 #  All publications with hep-ph on an annual basis without ATLAS and CMS:
 #
 fname = "inspire-annual-doi-hep-ph-no-atlas-cms.dat"
 print(fname)
-StoreAnnual(fname,[2001,2021],["dois:*","document_type:article","arxiv_eprints.categories:hep-ph"], ["collaborations.value:atlas", "collaborations.value:cms"])
+StoreAnnual(fname,[2001,2021],["dois.value:*","document_type:article","arxiv_eprints.categories:hep-ph"], ["collaborations.value:atlas", "collaborations.value:cms"])
 #
 #  All publications with hep-th on an annual basis without ATLAS and CMS:
 #
 fname = "inspire-annual-doi-hep-th-no-atlas-cms.dat"
 print(fname)
-StoreAnnual(fname,[2001,2021],["dois:*","document_type:article","arxiv_eprints.categories:hep-th"], ["collaborations.value:atlas", "collaborations.value:cms"])
+StoreAnnual(fname,[2001,2021],["dois.value:*","document_type:article","arxiv_eprints.categories:hep-th"], ["collaborations.value:atlas", "collaborations.value:cms"])
 #
 #  Lone wolf publications with hep-ph on an annual basis without ATLAS and CMS and not hep-th:
 #
 fname = "inspire-annual-doi-hep-ph-lone-wolf-no-atlas-cms-hep-th.dat"
 print(fname)
 StoreAnnual(fname,[2001,2021],
-                  ["dois:*","document_type:article","arxiv_eprints.categories:hep-ph","ac 1"], 
+                  ["dois.value:*","document_type:article","arxiv_eprints.categories:hep-ph","ac 1"], 
                   ["collaborations.value:atlas", "collaborations.value:cms","arxiv_eprints.categories:hep-th"])
 #
 #  Lone wolf publications with hep-th on an annual basis without ATLAS and CMS and not hep-ph:
@@ -91,7 +93,7 @@ StoreAnnual(fname,[2001,2021],
 fname = "inspire-annual-doi-hep-th-lone-wolf-no-atlas-cms-hep-ph.dat"
 print(fname)
 StoreAnnual(fname,[2001,2021],
-                  ["dois:*","document_type:article","arxiv_eprints.categories:hep-th","ac 1"], 
+                  ["dois.value:*","document_type:article","arxiv_eprints.categories:hep-th","ac 1"], 
                   ["collaborations.value:atlas", "collaborations.value:cms","arxiv_eprints.categories:hep-ph"])
 #
 #  Small collaborations publications with hep-ph on an annual basis without ATLAS and CMS and not hep-th:
@@ -99,7 +101,7 @@ StoreAnnual(fname,[2001,2021],
 fname = "inspire-annual-doi-hep-ph-ac-2-to-5-no-atlas-cms-hep-th.dat"
 print(fname)
 StoreAnnual(fname,[2001,2021],
-                  ["dois:*","document_type:article","arxiv_eprints.categories:hep-ph","ac 2 -> 5"], 
+                  ["dois.value:*","document_type:article","arxiv_eprints.categories:hep-ph","ac 2 -> 5"], 
                   ["collaborations.value:atlas", "collaborations.value:cms","arxiv_eprints.categories:hep-th"])
 #
 #  Small collaborations publications with hep-th on an annual basis without ATLAS and CMS and not hep-ph:
@@ -107,7 +109,7 @@ StoreAnnual(fname,[2001,2021],
 fname = "inspire-annual-doi-hep-th-ac-2-to-5-no-atlas-cms-hep-ph.dat"
 print(fname)
 StoreAnnual(fname,[2001,2021],
-                  ["dois:*","document_type:article","arxiv_eprints.categories:hep-th","ac 2 -> 5"], 
+                  ["dois.value:*","document_type:article","arxiv_eprints.categories:hep-th","ac 2 -> 5"], 
                   ["collaborations.value:atlas", "collaborations.value:cms","arxiv_eprints.categories:hep-ph"])
 #
 #  Medium collaborations publications with hep-ph on an annual basis without ATLAS and CMS and not hep-th:
@@ -115,7 +117,7 @@ StoreAnnual(fname,[2001,2021],
 fname = "inspire-annual-doi-hep-ph-ac-6-to-10-no-atlas-cms-hep-th.dat"
 print(fname)
 StoreAnnual(fname,[2001,2021],
-                  ["dois:*","document_type:article","arxiv_eprints.categories:hep-ph","ac 6 -> 10"], 
+                  ["dois.value:*","document_type:article","arxiv_eprints.categories:hep-ph","ac 6 -> 10"], 
                   ["collaborations.value:atlas", "collaborations.value:cms","arxiv_eprints.categories:hep-th"])
 #
 #  Medium collaborations publications with hep-th on an annual basis without ATLAS and CMS and not hep-ph:
@@ -123,7 +125,7 @@ StoreAnnual(fname,[2001,2021],
 fname = "inspire-annual-doi-hep-th-ac-6-to-10-no-atlas-cms-hep-ph.dat"
 print(fname)
 StoreAnnual(fname,[2001,2021],
-                  ["dois:*","document_type:article","arxiv_eprints.categories:hep-th","ac 6 -> 10"], 
+                  ["dois.value:*","document_type:article","arxiv_eprints.categories:hep-th","ac 6 -> 10"], 
                   ["collaborations.value:atlas", "collaborations.value:cms","arxiv_eprints.categories:hep-ph"])
 #
 #  Big collaborations publications with hep-ph on an annual basis without ATLAS and CMS and not hep-th:
@@ -131,7 +133,7 @@ StoreAnnual(fname,[2001,2021],
 fname = "inspire-annual-doi-hep-ph-ac-gt-10-no-atlas-cms-hep-th.dat"
 print(fname)
 StoreAnnual(fname,[2001,2021],
-                  ["dois:*","document_type:article","arxiv_eprints.categories:hep-ph","ac > 10"], 
+                  ["dois.value:*","document_type:article","arxiv_eprints.categories:hep-ph","ac > 10"], 
                   ["collaborations.value:atlas", "collaborations.value:cms","arxiv_eprints.categories:hep-th"])
 #
 #  Big collaborations publications with hep-th on an annual basis without ATLAS and CMS and not hep-ph:
@@ -139,7 +141,7 @@ StoreAnnual(fname,[2001,2021],
 fname = "inspire-annual-doi-hep-th-ac-gt-10-no-atlas-cms-hep-ph.dat"
 print(fname)
 StoreAnnual(fname,[2001,2021],
-                  ["dois:*","document_type:article","arxiv_eprints.categories:hep-th","ac > 10"], 
+                  ["dois.value:*","document_type:article","arxiv_eprints.categories:hep-th","ac > 10"], 
                   ["collaborations.value:atlas", "collaborations.value:cms","arxiv_eprints.categories:hep-ph"])
 #
 #  Atlas papers:
@@ -147,7 +149,7 @@ StoreAnnual(fname,[2001,2021],
 fname = "inspire-annual-doi-hep-ex-atlas.dat"
 print(fname)
 StoreAnnual(fname,[2001,2021],
-                  ["dois:*","document_type:article","arxiv_eprints.categories:hep-ex","collaborations.value:atlas"], 
+                  ["dois.value:*","document_type:article","arxiv_eprints.categories:hep-ex","collaborations.value:atlas"], 
                   ["collaborations.value:cms","arxiv_eprints.categories:hep-ph"])
 #
 #  CMS papers:
@@ -155,5 +157,7 @@ StoreAnnual(fname,[2001,2021],
 fname = "inspire-annual-doi-hep-ex-cms.dat"
 print(fname)
 StoreAnnual(fname,[2001,2021],
-                  ["dois:*","document_type:article","arxiv_eprints.categories:hep-ex","collaborations.value:cms"], 
+                  ["dois.value:*","document_type:article","arxiv_eprints.categories:hep-ex","collaborations.value:cms"], 
                   ["collaborations.value:atlas","arxiv_eprints.categories:hep-ph"])
+"""
+"""

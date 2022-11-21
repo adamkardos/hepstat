@@ -1,4 +1,4 @@
-#set datafile commentschars "!"
+set datafile commentschars "!"
 
 set terminal epslatex standalone size 16cm,10cm
 datfile = "inspire-annual-doi-hep-th"
@@ -11,10 +11,10 @@ set mytics 5
 set xlabel "Year" offset 0,-1
 set ylabel "No. of papers"
 set xtic rotate by 90 offset 0,-2
-set yrange [0 : 6500]
-set xrange [3 : 25]
+set yrange [0 : 7000]
+set xrange [-1 : 21]
 
-set label "All papers in hep-th with DOI" at 4, 6000
+set label "All papers in hep-th with DOI" at 0, 6500
 
 set style fill solid 1.0 border lt -1
 set style data histograms

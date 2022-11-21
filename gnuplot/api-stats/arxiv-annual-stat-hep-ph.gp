@@ -1,4 +1,4 @@
-#set datafile commentschars "!"
+set datafile commentschars "!"
 
 set terminal epslatex standalone size 16cm,10cm
 datfile = "arxiv-annual-stat-hep-ph"

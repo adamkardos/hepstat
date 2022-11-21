@@ -1,7 +1,7 @@
 set datafile commentschars "!"
 
 set terminal epslatex standalone size 16cm,10cm
-set output "monthly-stats-ph.tex"
+set output "arxiv-monthly-stat-hep-ph.tex"
 
 set lmargin at screen 0.15
 set pointsize 2
@@ -10,11 +10,11 @@ set mytics 5
 set xlabel "Months" offset 0,-3.5
 set ylabel "No. of papers"
 set xtic rotate by 90 offset 0,-4.2
-set yrange [0 to 900]
+set yrange [0 to 700]
 set key vertical maxrows 5
 set key font ",18"
-set key at 11.8, 850
-set label "hep-ph papers on a monthly basis" at -0.5, 800
+set key at 11.8, 650
+set label "hep-ph papers on a monthly basis" at -0.5, 650
 
 set style fill solid 1.0 border lt -1
 set style histogram clustered
